@@ -6,15 +6,14 @@
 #include <string>
 
 template<int N>
-struct place_holder {
-};
-place_holder<0> _1;
-place_holder<1> _2;
-place_holder<2> _3;
-place_holder<3> _4;
-place_holder<4> _5;
-place_holder<5> _6;
-place_holder<6> _7;
+struct place_holder {};
+constexpr place_holder<0> _1{};
+constexpr place_holder<1> _2{};
+constexpr place_holder<2> _3{};
+constexpr place_holder<3> _4{};
+constexpr place_holder<4> _5{};
+constexpr place_holder<5> _6{};
+constexpr place_holder<6> _7{};
 
 template<typename F, typename ... Args>
 struct bind_t {
